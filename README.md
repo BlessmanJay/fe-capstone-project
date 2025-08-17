@@ -28,9 +28,9 @@ Frontend: React, JSX
 
 Styling: Tailwind CSS
 
-API: Movie Database API (TMDb or similar)
+API: Movie Database API (OMDb)
 
-Deployment: Vercel / Netlify (optional)
+Deployment: Vercel or Netlify
 
 
 ### 📦 Getting Started
