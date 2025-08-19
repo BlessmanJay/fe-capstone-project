@@ -19,6 +19,7 @@ const SearchBar = ({ placeholder }) => {
         onChange={(e) => setQuery(e.target.value)}
         placeholder={placeholder}
         className="bg-transparent outline-none flex-grow text-white placeholder-gray-400"
+        style={{ color: "white" }}
       />
       <button
         type="submit"

@@ -1,16 +1,18 @@
-/** @type { import('tailwindcss').Config} */
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
-import HeroSection from "./components/sections/HeroSection";
-import TrendingSection from "./components/sections/TrendingSection";
-import Header from "./components/layout/Header";
-import SearchBar from "./components/common/SearchBar";
+import MainPage from "./pages/MainPage";
+import MovieDetails from "./pages/MovieDetails";
 
 function App() {
   return (
-    <>
-      <LandingPage />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/main" element={<MainPage />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -40,7 +40,7 @@ h1 {
   color: #fff;
 }
 h2 {
-  font-size: 3.2em;
+  font-size: 1.5em;
   line-height: 1.1;
   color: #fff;
 }
@@ -87,4 +87,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.footer {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5rem;
+  background-color: #4c265c;
+}
+.footer-text {
+  font-size: 20px;
+  font-weight: lighter;
 }

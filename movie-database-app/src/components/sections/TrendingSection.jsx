@@ -7,7 +7,12 @@ const TrendingSection = ({ movies = [] }) => {
       <h3 className="text-left text-xl font-bold mb-4">Trending</h3>
       <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
         {movies.map((movie) => (
-          <MovieCard key={movie.id} poster={movie.poster} title={movie.title} />
+          <MovieCard
+            key={movie.id}
+            poster={movie.poster}
+            title={movie.title}
+            id={movie.id}
+          />
         ))}
       </div>
     </section>
