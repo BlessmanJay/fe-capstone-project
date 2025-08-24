@@ -92,6 +92,7 @@ export default function MovieDetails() {
               </p>
             </div>
 
+<<<<<<< HEAD
             {/* Action Buttons */}
             <div className="mt-8 flex flex-row justify-between gap-4">
               <button
@@ -108,6 +109,8 @@ export default function MovieDetails() {
               </button>
             </div>
 
+=======
+>>>>>>> 359b9e2f149358f43e88fab236b764d1a8b3c2e1
             <Link
               to="/main"
               className="mt-6 inline-block bg-white text-[#4C265C] px-4 py-2 rounded-lg font-semibold"

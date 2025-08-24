@@ -99,7 +99,11 @@ const MainPage = () => {
       className="min-h-screen text-white"
       style={{ backgroundColor: "#4C265C" }}
     >
+<<<<<<< HEAD
       <div className="px-4">
+=======
+      <div className="max-w-7xl mx-auto px-4">
+>>>>>>> 359b9e2f149358f43e88fab236b764d1a8b3c2e1
         <Header />
         <SearchBarMain
           value={search}
