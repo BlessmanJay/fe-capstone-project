@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/layout/Header";
-import SearchBarMain from "../components/movies/SearchBarMain";
-import { Link } from "react-router-dom";
+import SearchBarMain from "../components/common/SearchBarMain";
 import TrendingSectionMain from "../components/sections/TrendingSectionMain";
 import LoadingSpinner from "../components/common/LoadingSpinner";
 
@@ -99,29 +98,26 @@ const MainPage = () => {
       className="min-h-screen text-white"
       style={{ backgroundColor: "#4C265C" }}
     >
-<<<<<<< HEAD
       <div className="px-4">
-=======
-      <div className="max-w-7xl mx-auto px-4">
->>>>>>> 359b9e2f149358f43e88fab236b764d1a8b3c2e1
-        <Header />
-        <SearchBarMain
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          onSubmit={handleSearchSubmit}
-        />
-        {loading ? (
-          <LoadingSpinner />
-        ) : movies.length === 0 ? (
-          <p className="text-center text-lg mt-10 text-red-400">
-            No movies found.
-          </p>
-        ) : (
-          <TrendingSectionMain movies={movies} />
-        )}
+        <div className="max-w-7xl mx-auto px-4">
+          <Header />
+          <SearchBarMain
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            onSubmit={handleSearchSubmit}
+          />
+          {loading ? (
+            <LoadingSpinner />
+          ) : movies.length === 0 ? (
+            <p className="text-center text-lg mt-10 text-red-400">
+              No movies found.
+            </p>
+          ) : (
+            <TrendingSectionMain movies={movies} />
+          )}
+        </div>
       </div>
     </div>
   );
 };
-
 export default MainPage;

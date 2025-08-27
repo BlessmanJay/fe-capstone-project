@@ -40,11 +40,8 @@ h1 {
   color: #fff;
 }
 h2 {
-<<<<<<< HEAD
   font-size: 2.5em;
-=======
   font-size: 1.5em;
->>>>>>> 359b9e2f149358f43e88fab236b764d1a8b3c2e1
   line-height: 1.1;
   color: #fff;
 }
@@ -103,7 +100,6 @@ button:focus-visible {
   font-size: 20px;
   font-weight: lighter;
 }
-<<<<<<< HEAD
 
 .hero-head {
   margin-bottom: 0%;
@@ -124,5 +120,3 @@ button:focus-visible {
   color: #fff;
   margin-left: 1rem;
 }
-=======
->>>>>>> 359b9e2f149358f43e88fab236b764d1a8b3c2e1

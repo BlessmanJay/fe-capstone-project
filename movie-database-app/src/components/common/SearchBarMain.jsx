@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 
-const SearchBar = ({ value, onChange, onSubmit }) => {
+const SearchBarMain = ({ value, onChange, onSubmit }) => {
   return (
     <form
       onSubmit={onSubmit}
@@ -12,9 +12,9 @@ const SearchBar = ({ value, onChange, onSubmit }) => {
         placeholder="Search to discover movies"
         value={value}
         onChange={onChange}
-        className="flex-grow bg-transparent outline-none text-white placeholder-white-300"
+        className="flex-grow bg-transparent outline-none text-white placeholder-gray-300"
       />
-      <button type="submit" className="text-white-300 hover:text-white">
+      <button type="submit" className="text-white-300 hover:text-gray">
         <FiSearch size={20} />
       </button>
     </form>
@@ -31,4 +31,4 @@ const SearchBar = ({ value, onChange, onSubmit }) => {
   </button>
 </div>;
 
-export default SearchBar;
+export default SearchBarMain;
