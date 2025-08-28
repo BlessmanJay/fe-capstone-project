@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "../components/layout/Header";
+import HeroSection from "../components/sections/HeroSection";
 import TrendingSection from "../components/sections/TrendingSection";
 import ErrorMessage from "../components/common/ErrorMessage";
 import SearchBar from "../components/common/SearchBar";
@@ -79,7 +80,7 @@ const LandingPage = () => {
         setMovies([]);
         setError("No movies found.");
       }
-    } catch (err) {
+    } catch (error) {
       setError("Failed to search movies.");
     }
     setLoading(false);
@@ -92,11 +93,10 @@ const LandingPage = () => {
     >
       <div className="max-w-7xl mx-auto px-4">
         <Header />
+
         <section className="text-center mt-10 mb-12 text-white">
-          <h2 className="text-4xl font-extrabold text-white">
-            Discover Movies
-          </h2>
-          <p className="text-2xl font-bold text-white">Instantly</p>
+          <HeroSection />
+
           <div className="mt-6 flex justify-center">
             <SearchBar
               placeholder="Search to discover movies"

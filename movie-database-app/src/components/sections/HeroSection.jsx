@@ -1,20 +1,13 @@
-import SearchBar from "../common/SearchBar";
+import React, { useState } from "react";
 
-const HeroSection = ({ value, onChange, onSubmit }) => {
+const HeroSection = () => {
   return (
     <section className="text-center mt-10 mb-12 text-white">
       <h2 className="hero-head text-4xl font-extrabold text-white">
         Discover Movies
       </h2>
       <p className="hero-subtext">Instantly</p>
-      <div className="mt-6 flex justify-center">
-        <SearchBar
-          placeholder="Search to discover movies"
-          value={value}
-          onChange={onChange}
-          onSubmit={onSubmit}
-        />
-      </div>
+      <div className="mt-6 flex justify-center"></div>
     </section>
   );
 };

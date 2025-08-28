@@ -12,7 +12,7 @@ const SearchBar = ({ value, onChange, onSubmit }) => {
         placeholder="Search to discover movies"
         value={value}
         onChange={onChange}
-        className="flex-grow bg-transparent outline-none text-white placeholder-white-300"
+        className="flex-grow bg-transparent outline-none text-white placeholder-gray-400"
       />
       <button type="submit" className="text-white-300 hover:text-white">
         <FiSearch size={20} />
