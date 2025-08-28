@@ -49,7 +49,9 @@ Deployment: Vercel or Netlify
 Clone the repo and install dependencies:
 
 git clone https://github.com/BlessmanJay/fe-capstone-project.git
+
 cd movie-database-app
+
 npm install
 
 Create a .env file in the root directory and add your OMDb API key:
