@@ -28,7 +28,7 @@ react-app/README.md: \***\*Detail**ed\*\* setup guide, dependencies, and develop
 
 Landing Page → Search bar + trending movies
 
-Results Page → List of movies returned from search
+Main Page → More movies returned from search
 
 Movie Details Page → Detailed view for selected movie
 
